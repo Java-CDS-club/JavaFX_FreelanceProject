@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="layoutt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1280.0" style="-fx-background-color: #fff6e3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainPageController">
+   <children>
+      <AnchorPane fx:id="common" layoutX="282.0" layoutY="30.0" prefHeight="307.0" prefWidth="1002.0" visible="false">
+         <children>
+            <Pane prefHeight="191.0" prefWidth="1002.0" style="-fx-background-color: #5c7d86;">
+               <children>
+                  <ImageView fitHeight="253.0" fitWidth="318.0" layoutX="806.0" layoutY="-26.0">
+                     <image>
+                        <Image url="@../images/6.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="168.0" fitWidth="231.0" layoutX="850.0" layoutY="143.0">
+                     <image>
+                        <Image url="@../images/2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <HBox layoutX="41.0" layoutY="87.0" prefHeight="168.0" prefWidth="720.0">
+               <children>
+                  <Ellipse fx:id="userImage2" fill="#d4a88f" radiusX="80.0" radiusY="80.0" strokeType="INSIDE" />
+                  <Label fx:id="userName2" text="UresName" textFill="#fff6e3">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="65.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="AboutMeLabel" fill="#d4a88f" strokeType="OUTSIDE" strokeWidth="0.0" text="Сайты любой сложности. Интернет-магазины. Wordpress - Joomla - Opencart - Drupal - Prestashop" wrappingWidth="403.8984375">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Button fx:id="but1" layoutX="41.0" layoutY="264.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #477489;" text="Изменить фото профиля" textFill="WHITE" />
+            <Button fx:id="myordersButton" layoutX="498.0" layoutY="264.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: d4a88f;" stylesheets="@Styles.css" text="мои заказы" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutMeBut" layoutX="222.0" layoutY="264.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="264.0" style="-fx-background-color: #6da183;" stylesheets="@Styles.css" text="Добавить информацию о себе" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="freelancer" layoutX="285.0" layoutY="364.0" prefHeight="387.0" prefWidth="996.0" visible="false">
+         <children>
+            <HBox layoutX="37.0" layoutY="14.0" prefHeight="34.0" prefWidth="792.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="212.0" text="Выполнено заказов : 0" textFill="#d4a88f">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Средняя стоимость заказа : 0 $" textFill="#d4a88f">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Средняя оценка: 0" textFill="#d4a88f">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="userName211" layoutX="37.0" layoutY="56.0" text="Портфолио" textFill="#d4a88f">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="202.0" layoutY="56.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: d4a88f;" stylesheets="@Styles.css" text="Добавить работу" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+            <ListView layoutX="37.0" layoutY="100.0" orientation="HORIZONTAL" prefHeight="281.0" prefWidth="944.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="customer" layoutX="285.0" layoutY="352.0" prefHeight="397.0" prefWidth="996.0" visible="false">
+         <children>
+            <TextField fx:id="Title" alignment="TOP_LEFT" layoutX="37.0" layoutY="77.0" prefHeight="38.0" prefWidth="499.0" promptText="Заголовок" style="-fx-background-color: #c2dcd9;">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+
+            <Label fx:id="userName21" layoutX="37.0" layoutY="34.0" text="Создайте новый заказ" textFill="#d4a88f">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <HBox layoutX="37.0" layoutY="-3.0" prefHeight="34.0" prefWidth="792.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="212.0" text="Выполнено заказов : 0" textFill="#d4a88f">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Средняя стоимость заказа : 0 $" textFill="#d4a88f">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Средняя оценка: 0" textFill="#d4a88f">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="Text" alignment="TOP_LEFT" layoutX="37.0" layoutY="127.0" prefHeight="160.0" prefWidth="499.0" promptText="Текст заказа" style="-fx-background-color: #c2dcd9;">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="price1" alignment="TOP_LEFT" layoutX="37.0" layoutY="300.0" prefHeight="38.0" prefWidth="499.0" promptText="Цена (в рублях)" style="-fx-background-color: #c2dcd9;">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="publish1" layoutX="37.0" layoutY="352.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="499.0" style="-fx-background-color: #477489;" text="Опубликовать" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ListView fx:id="listt" layoutX="298.0" layoutY="164.0" prefHeight="575.0" prefWidth="965.0" style="-fx-background-color: #fff6e3;" />
+      <ListView fx:id="listt1" layoutX="297.0" layoutY="174.0" prefHeight="575.0" prefWidth="976.0" style="-fx-background-color: #fff6e3;" visible="false" />
+      <ListView fx:id="freel" layoutX="299.0" layoutY="181.0" prefHeight="536.0" prefWidth="952.0" visible="false" />
+      <Pane fx:id="aboutProg" layoutX="280.0" layoutY="15.0" prefHeight="721.0" prefWidth="1002.0" visible="false">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="183.0" layoutX="14.0" layoutY="537.0">
+               <image>
+                  <Image url="@../images/5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="307.0" fitWidth="281.0" layoutX="-21.0" layoutY="393.0">
+               <image>
+                  <Image url="@../images/4.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="94.0" layoutY="65.0" prefHeight="200.0" prefWidth="815.0" style="-fx-background-color: #d6a180; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="123.0" layoutY="46.0" prefHeight="31.0" prefWidth="570.0" text="Программа разработана в качестве учебной практики" textAlignment="JUSTIFY" textFill="#fff6e3">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="168.0" layoutY="85.0" prefHeight="31.0" prefWidth="479.0" text="студентом второго курса ЮФУ кафедры МОП ЭВМ" textFill="#fff6e3">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="212.0" layoutY="125.0" prefHeight="31.0" prefWidth="393.0" text="Зиненко Елизаветой Ивановной в 2019 году" textFill="#fff6e3">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <VBox layoutY="30.0" prefHeight="721.0" prefWidth="281.0" style="-fx-background-color: #5b977a;">
+         <children>
+            <HBox prefHeight="110.0" prefWidth="346.0">
+               <children>
+            
+                        <Ellipse fx:id="userImage" fill="#fff6e3" radiusX="40.0" radiusY="40.0" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Ellipse>
+                  <Label id="need" fx:id="userLabel" layoutX="10.0" lineSpacing="50.0" styleClass="need" stylesheets="@Styles.css" text="Elizav" textFill="#fff6e3">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" top="36.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Line endX="180.2928924560547" startX="-100.0" stroke="#fff6e3" />
+            <JFXButton fx:id="MyPageBut" prefHeight="48.0" prefWidth="282.0" style="-fx-background-color: #5b977a; -fx-background-radius: 0;" text="Моя страница" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="workBut" defaultButton="true" prefHeight="48.0" prefWidth="294.0" style="-fx-background-color: #5b977a;" text="Работа" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="freelancerBut" prefHeight="48.0" prefWidth="294.0" style="-fx-background-color: #5b977a;" text="Фрилансеры" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="aboutBut" prefHeight="48.0" prefWidth="294.0" style="-fx-background-color: #5b977a;" text="О приложении" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="mainBut" prefHeight="48.0" prefWidth="294.0" style="-fx-background-color: #5b977a;" text="Главная" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </JFXButton>
+            <Slider fx:id="price" prefHeight="48.0" prefWidth="212.0">
+               <VBox.margin>
+                  <Insets top="270.0" />
+               </VBox.margin></Slider>
+            <ProgressBar fx:id="progressBar" prefHeight="20.0" prefWidth="274.0" progress="0.0">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </ProgressBar>
+         </children>
+      </VBox>
+      <Label fx:id="listLabel" layoutX="298.0" layoutY="96.0" text="Опубликованные заказы" textFill="#be704f">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="leave" fitHeight="199.0" fitWidth="111.0" layoutX="1200.0">
+         <image>
+            <Image url="@../images/7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leave1" fitHeight="213.0" fitWidth="121.0" layoutX="1106.0" layoutY="-56.0" rotate="45.0">
+         <image>
+            <Image url="@../images/7.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="topPane" prefHeight="30.0" prefWidth="1280.0" style="-fx-background-color: #3c7562;">
+         <children>
+            <ImageView fx:id="CloseButton" layoutX="1220.0" layoutY="5.0">
+               <image>
+                  <Image url="@../images/13.png" />
+               </image>
+            </ImageView>
+            <Pane id="hoverpane" fx:id="hoverpane" layoutX="1220.0" opacity="0.23" prefHeight="30.0" prefWidth="60.0" styleClass="hoverpane" stylesheets="@Styles.css" />
+            <ImageView layoutX="1180.0" layoutY="5.0">
+               <image>
+                  <Image url="@../images/14.png" />
+               </image>
+            </ImageView>
+            <Pane id="hoverpane" fx:id="hoverpane1" layoutX="1160.0" opacity="0.23" prefHeight="30.0" prefWidth="60.0" styleClass="hoverpane" stylesheets="@Styles.css" />
+
+                                             </children>
+      </Pane>
+   </children>
+
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="816.0" style="-fx-background-color: #f9edd3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AboutPageController">
+   <children>
+      <JFXButton fx:id="add" layoutX="56.0" layoutY="341.0" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #f1613e;" text="Добавить" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="closeBut" layoutX="776.0" text="X">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TextArea fx:id="aboutText" layoutX="56.0" layoutY="51.0" prefHeight="282.0" prefWidth="626.0" />
+   </children>
+</AnchorPane>

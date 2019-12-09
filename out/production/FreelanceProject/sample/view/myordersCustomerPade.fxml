@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.71" prefHeight="500.0" prefWidth="816.0" style="-fx-background-color: #c2dcd9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MyordersCustomerPadeController">
+   <children>
+      <ListView fx:id="list" layoutX="20.0" layoutY="104.0" prefHeight="376.0" prefWidth="776.0" />
+      <Label layoutX="19.0" layoutY="6.0" text="Ваши заказы" textFill="#daa26e">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="closeBut" layoutX="767.0" prefHeight="23.0" prefWidth="26.0" text="X">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="combo" layoutX="44.0" layoutY="127.0" prefWidth="150.0" promptText="Так так так" visible="false" />
+      <DatePicker fx:id="pick" layoutX="224.0" layoutY="127.0" promptText="Что тут у нас" visible="false" />
+   </children>
+</AnchorPane>
